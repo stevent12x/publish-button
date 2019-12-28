@@ -121,4 +121,30 @@
   animation: tick 0.3s linear forwards 0.4s;
 }
 
+@keyframes tick {
+  100% {
+    transform: rotate(-90deg) translate(0, -5px) scale(var(--progress-scale));
+  }
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  font-family: "Roboto", Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  background: #eceffc;
+}
+
 /*# sourceMappingURL=main.css.map */
